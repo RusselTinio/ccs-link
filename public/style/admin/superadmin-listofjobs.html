@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>CCSLINK</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="vendors/feather/feather.css">
+  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/modal.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <!-- endinject -->
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo " href="forecast.html"><img src="images/logo.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo-mini" href="forecast.html"><img src="images/logo1.png" alt="logo"/></a>
+
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="icon-menu"></span>
+        </button>
+        <ul class="navbar-nav mr-lg-2">
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="images/faces/admin.png" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <i class="ti-settings text-primary"></i>
+                Settings
+              </a>
+              <a class="dropdown-item">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li> 
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="icon-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial -->
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="profile">
+              <i class="menu-icon"><img src="images/faces/admin.png"/></i>
+               <span class="menu-title" id="profile1">Super Admin</span>
+             </a>
+             </li>
+          <li class="nav-item">
+            <a class="nav-link" href="superadmin-forecast.html">
+              <i class="icon-grid menu-icon"></i>
+              <span class="menu-title">Analytics</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="superadmin-listofusers.html">
+              <i class="icon-head menu-icon"></i>
+              <span class="menu-title">List of Users</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="superadmin-listofjobs.html">
+              <i class="icon-briefcase menu-icon"></i>
+              <span class="menu-title">List of Jobs</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="superadmin-listofevents.html">
+              <i class="icon-paper menu-icon"></i>
+              <span class="menu-title">List of News and Events</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title mb-0">List of Jobs</p>
+                  <div class="table-responsive">
+                    <table class="table table-striped table-borderless">
+                      <thead>
+                        <tr>
+                        <th>Image</th>
+                          <th>Jobs</th>
+                          <th>Description</th>
+                          <th>Date</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                        </tr>  
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class="py-1">
+                                <img src="images/faces/face1.jpg" alt="image"/>
+                          </td>
+                          <td>Administrative Staff</td>
+                          <td>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.</p>
+                          </td>
+                          <td>21 Sep 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-warning">Pending</div></td>
+                          <td><a href="#approve" data-toggle="modal">
+                            <button type="button" class="btn btn-dark btn-sm">Approve</button>
+                            </a>
+                          </td>
+
+                         
+                        </tr>
+                        <tr>
+                            <td class="py-1">
+                                <img src="images/faces/face1.jpg" alt="image"/>
+                          </td>
+                            <td>Administrative Staff</td>
+                            <td>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                              tempor incididunt.</p>
+                            </td>
+                            <td>21 Sep 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-warning">Pending</div></td>
+                          <td><a href="#approve" data-toggle="modal">
+                            <button type="button" class="btn btn-dark btn-sm">Approve</button>
+                            </a>
+                          </td>
+
+                          </tr>
+                        <tr>
+                            <td class="py-1">
+                                <img src="images/faces/face1.jpg" alt="image"/>
+                          </td>
+                          <td>Accounting Clerk</td>
+                          <td>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.</p>
+                          </td>
+                          <td>28 Sep 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-warning">Pending</div></td>
+                          <td><a href="#approve" data-toggle="modal">
+                            <button type="button" class="btn btn-dark btn-sm">Approve</button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td class="py-1">
+                                <img src="images/faces/face1.jpg" alt="image"/>
+                          </td>
+                          <td>Accounting Clerk</td>
+                          <td>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.</p>
+                          </td>
+                          <td>28 Sep 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-warning">Pending</div></td>
+                          <td><a href="#approve" data-toggle="modal">
+                            <button type="button" class="btn btn-dark btn-sm">Approve</button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td class="py-1">
+                                <img src="images/faces/face1.jpg" alt="image"/>
+                          </td>
+                            <td>Administrative Staff</td>
+                            <td>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                              tempor incididunt.</p>
+                            </td>
+                            <td>21 Sep 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-warning">Pending</div></td>
+                          <td><a href="#approve" data-toggle="modal">
+                            <button type="button" class="btn btn-dark btn-sm">Approve</button>
+                            </a>
+                          </td>
+
+                          </tr>
+                          <tr>
+                            <td class="py-1">
+                                <img src="images/faces/face1.jpg" alt="image"/>
+                          </td>
+                          <td>Accounting Clerk</td>
+                          <td>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt.</p>
+                          </td>
+                          <td>28 Sep 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-warning">Pending</div></td>
+                          <td><a href="#approve" data-toggle="modal">
+                            <button type="button" class="btn btn-dark btn-sm">Approve</button>
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                            <td class="py-1">
+                                <img src="images/faces/face1.jpg" alt="image"/>
+                          </td>
+                            <td>Administrative Staff</td>
+                            <td>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                              tempor incididunt.</p>
+                            </td>
+                            <td>21 Sep 2018</td>
+                          <td class="font-weight-medium"><div class="badge badge-warning">Pending</div></td>
+                          <td><a href="#approve" data-toggle="modal">
+                            <button type="button" class="btn btn-dark btn-sm">Approve</button>
+                            </a>
+                          </td>
+                          </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+         
+        </div>
+         <!--Approve-->
+         <div id="approve" class="modal fade">
+          <div class="modal-dialog modal-confirm">
+            <div class="modal-content">
+              <div class="formbold-event-wrapper">
+                <h3>Job Title</h3>
+                <img src="images/faces/event.jpg">
+                <div class="formbold-event-details">
+                  <h5>Job Details</h5>
+                  
+                  <ul>
+                    <h6>Description</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                      tempor incididunt.
+                    </p>
+                    <li>
+                      <svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 18 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1675_1725)">
+                          <path
+                            d="M12.75 2.25H15.75C15.9489 2.25 16.1397 2.32902 16.2803 2.46967C16.421 2.61032 16.5 2.80109 16.5 3V15C16.5 15.1989 16.421 15.3897 16.2803 15.5303C16.1397 15.671 15.9489 15.75 15.75 15.75H2.25C2.05109 15.75 1.86032 15.671 1.71967 15.5303C1.57902 15.3897 1.5 15.1989 1.5 15V3C1.5 2.80109 1.57902 2.61032 1.71967 2.46967C1.86032 2.32902 2.05109 2.25 2.25 2.25H5.25V0.75H6.75V2.25H11.25V0.75H12.75V2.25ZM11.25 3.75H6.75V5.25H5.25V3.75H3V6.75H15V3.75H12.75V5.25H11.25V3.75ZM15 8.25H3V14.25H15V8.25Z"
+                            fill="#536387"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1675_1725">
+                            <rect width="18" height="18" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      September 21, 2018
+                    </li>
+                    
+                  </ul>
+                 
+                </div>
+              </div><div class="modal-footer justify-content-center"> 
+                <button type="button" class="btn btn-green">Approve</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+               
+              </div>
+              </div>
+              
+            </div>
+          </div>
+        </div> 
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html 
+        <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2021. All rights reserved.</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="ti-heart text-danger ml-1"></i></span>
+            </div>
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            </div>
+            <br>
+            <br>
+          </footer> 
+        partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <script src="vendors/chart.js/Chart.min.js"></script>
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="js/off-canvas.js"></script>
+  <script src="js/hoverable-collapse.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/settings.js"></script>
+  <script src="js/todolist.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="js/chart.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

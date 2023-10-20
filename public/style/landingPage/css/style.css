@@ -1,0 +1,157 @@
+#header {
+  padding: 14px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header.header-scrolled {
+  background: rgba(0, 0, 0, 0.8);
+  transition: all 0.5s;
+}
+
+@media (max-width: 673px) {
+  #logo {
+    margin-left: 20px;
+  }
+}
+
+#header #logo h1 {
+  font-size: 34px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#header #logo h1 a, #header #logo h1 a:hover {
+  color: #fff;
+  padding-left: 10px;
+  border-left: 4px solid #49e4fa;
+}
+
+#header #logo img {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #header #logo h1 {
+    font-size: 28px;
+  }
+  #header #logo img {
+    max-height: 40px;
+  }
+}
+
+.ticker-btn {
+  background: #49e4fa;
+  color: #fff;
+  padding: 6px 20px !important;
+  text-transform: uppercase;
+}
+
+.ticker-btn:hover {
+  background: rgba(73, 228, 250, 0.2);
+  color: #49e4fa;
+}
+
+@media (max-width: 960px) {
+  .ticker-btn {
+    display: none !important;
+  }
+}
+
+#banner {
+  width: 100%;
+  height: 60vh;
+  background: url("../img/CCS-building.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 70px;
+  padding: 0;
+}
+
+#banner:before {
+  content: "";
+  background: rgba(56, 64, 70, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#banner .container {
+  z-index: 2;
+  margin-top: 180px;
+}
+
+#banner h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#banner h1 span {
+  border-bottom: 4px solid #3498db;
+}
+
+#banner h2 {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+#banner .btn-get-started {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 4px;
+  transition: ease-in-out 0.3s;
+  color: #fff;
+  background: #3498db;
+  text-transform: uppercase;
+}
+
+#banner .btn-get-started:hover {
+  background: #4ea5e0;
+}
+
+@media (max-width: 992px) {
+  #banner {
+    height: calc(100vh - 70px);
+  }
+}
+
+@media (max-width: 768px) {
+  #banner h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  #banner h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+#text-carousel .carousel-item {
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#text-carousel .carousel-item.active {
+  opacity: 1;
+}

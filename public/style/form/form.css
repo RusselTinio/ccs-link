@@ -1,0 +1,186 @@
+@import "compass/css3";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #384047;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 10px;
+}
+#card1{
+  margin-top: 20px;
+
+}
+#card1 h4{
+  padding-top: 2px;
+  color: #fff;
+}
+.card{
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+form {
+  height: 650px;
+  width: 700px;
+  background: #fff;
+  position: absolute;
+  justify-content: center; 
+  align-items: center;
+  box-shadow: 0 0 1em #222;
+  border-radius: 2px;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  display: flex;
+  
+}
+
+#popup-content{
+  padding: 20px;
+}
+.popup{
+  display: block;
+}
+.pop{
+  display: none;
+}
+
+.formbold-pt-3 {
+  padding-top: 12px;
+}
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 550px;
+  width: 100%;
+  background: white;
+}
+.formbold-form-label {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  color: #07074d;
+  margin-bottom: 12px;
+}
+.formbold-form-label-2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.formbold-form-input {
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  background: white;
+  font-weight: 500;
+  font-size: 16px;
+  color: #6b7280;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input:focus {
+  border-color: #6a64f1;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+.formbold-form-file {
+  padding: 12px;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(83, 99, 135, 0.5);
+}
+.formbold-form-file::-webkit-file-upload-button {
+  display: none;
+}
+.formbold-form-file:before {
+  content: 'Upload';
+  display: inline-block;
+  background: #EEEEEE;
+  border: 0.5px solid #E7E7E7;
+  border-radius: 3px;
+  padding: 3px 12px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  color: #637381;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 10px;
+}
+
+
+.formbold-btn {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 14px 32px;
+  border: none;
+  font-weight: 600;
+  background-color: #0B2447;
+  color: white;
+  width: auto;
+  cursor: pointer;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold--mx-3 {
+  margin-left: -12px;
+  margin-right: -12px;
+  
+}
+
+.formbold-px-3 {
+  padding-left: 12px;
+  padding-right: 12px;
+  
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.w-full {
+  width: 100%;
+}
+@media (min-width: 540px) {
+  .sm\:w-half {
+    width: 50%;
+  }
+}
+
+.pop .popup{
+  visibility: visible;
+  -webkit-animation: fadeIn 0.1s;
+  animation: fadeIn 0.1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+

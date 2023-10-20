@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+*{
+    font-family: 'poppins' ,sans-serif;
+}
+body{
+    background-image: url("images/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+
+.box{
+    display: flex;
+    padding-left: 5%;
+    height: 73vh;
+}
+.container{
+    width: 25%;
+    display: block;
+    flex-direction: column;
+    position: absolute;
+}
+
+.top{
+    padding-bottom: 10vh;
+    margin-left: 15%;
+}
+header{
+    font-family: "copperplate", fantasy;
+    color: orangered;
+    display: block;
+    font-size: 30px;
+    padding: 10px 0 0 0;
+    margin-left: 85px;
+}
+
+h5{
+    font-family: "courier new";
+    color: black;
+    display: inline;
+    opacity: 50%;
+    margin-left: 25px;
+}
+
+.input-field .input{
+    height: 30px;
+    width: 70vh;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: black;
+    color: black;
+    font-size: 15px;
+    background: transparent;
+    outline: none;
+}
+
+::-webkit-input-placeholder{
+    color: black;
+    opacity: 50%;
+}
+
+.button{
+    padding-top: 15px;
+}
+.submit{
+    margin-left: 50%;
+    border: none;
+    font-size: 15px;
+    font-family: "georgia", serif;
+    border-radius: 5px;
+    height: 30px;
+    width: 65px;
+    outline: none;
+    color: white;
+    background: orangered;
+    cursor: pointer;
+    transition: .3s ;
+}
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.login_admin {
+    width: 80%;
+    position: relative;
+    margin-left: 10%;
+    padding: 5px 25px 25px 25px;
+    background-color: orangered;
+}
+.one-login{
+    color: white;
+    padding-top: 0;
+}
+p{
+    font-family: "georgia", serif;
+}
+.submit-admin{
+    margin-left: 35%;
+    border: none;
+    font-size: 15px;
+    font-family: "georgia", serif;
+    border-radius: 5px;
+    height: 30px;
+    width: 40vh;
+    outline: none;
+    color: black;
+    background: white;
+    cursor: pointer;
+    transition: .3s ;
+}
+.submit-admin:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}

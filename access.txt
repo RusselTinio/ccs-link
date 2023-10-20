@@ -1,0 +1,7 @@
+Admin:
+username: admin
+password:admin1234
+
+SuperAdmin:
+username: administration
+password: superadmin123
